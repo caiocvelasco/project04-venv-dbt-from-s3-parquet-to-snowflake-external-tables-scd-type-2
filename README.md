@@ -1,4 +1,4 @@
-# ETL - Leveraging dbt-Snowflake to perform Transformation Step (Reading Parquet from S3 -> Storing in Snowflake External Tables -> dbt Transformation in Snowflake).
+# ETL - Leveraging dbt-Snowflake to perform Transformation Step (Reading Parquet from S3 -> Storing in Snowflake External Tables -> dbt Transformation in Snowflake -> SCD Type 2 w/ Incremental Strategy).
 
 <img src = "img/dbt_transformation.jpg"> 
 
@@ -22,8 +22,6 @@
     - **.gitignore**
     - **.python-version**
     - **requirements.txt**
-    - feng_dbt_user_no_MFA.sql (a file to help with creating a role an user in Snowflake)
-    - feng_snf_s3_storage_integration_ext_table.sql (a file to help with storage integration in Snowflake)
     - **README.md**
 
 ## Setup Instructions
