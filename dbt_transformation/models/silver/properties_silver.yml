@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_scd2_dim_customers
+    description: "SCD Type 2 - Staging Table - Incremental Strategy"
+    columns:
+      - name: customer_id
+        description: "Unique identifier for each customer"
+        data_tests:
+          - unique
+          - not_null
+      - name: name
+        description: "Name of the customer"
+        data_tests:
+          - not_null
+      - name: age
+        description: "Age of the customer"
+      - name: gender
+        description: "Gender of the customer"
+      - name: signup_date
+        description: "Signup date of the customer"
+        data_tests:
+          - not_null
+      - name: extracted_at
+        description: "Timestamp when the data was extracted"
+      - name: inserted_at
+        description: "Timestamp when the data was inserted into the database"
